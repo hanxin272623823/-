@@ -1,0 +1,18 @@
+1. 图片优化  
+  （1）压缩图片  图片压缩网站: https://tinypng.com/
+  （2）切换图片格式为 jpg 
+  （3）CSS sprite  横向合并小图片 
+  （4）使favicon.ico小且缓存  浏览器默认请求（即使没有这个icon）不经常更新，设置expires头部
+2. CSS  
+   （1）CSS文件写在 head 里
+   （2）压缩CSS文件
+3. Server
+    （1）使用CDN
+    （2）启动 gzip 压缩
+4. JS
+    （1）JS文件放到底部
+    （2）压缩JS文件
+    （3）更好的事件处理  事件委托、DomContentLoad 替换 onLoad 
+5. Content 
+    (1) inline images 内联图片，使用 data:url 来内联图片（矢量图标转为base64编码，直接内嵌到HTML或者CSS中，减少HTTP请求）
+    (2) 组件预加载、延迟加载
